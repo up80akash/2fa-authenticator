@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Welcome to 2FA Authentication App</h1>
+{% if user %}
+<p>Hello, {{ user[1] }}!</p>
+{% else %}
+<p>Please login or register to continue.</p>
+{% endif %}
+{% endblock %}
+

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Setup 2FA</h2>
+<p>Scan this QR code in your authenticator app:</p>
+<img src="https://api.qrserver.com/v1/create-qr-code/?data={{ otp_uri }}&size=200x200" alt="QR Code">
+<form method="POST">
+    <br><button type="submit">I have scanned the QR code</button>
+</form>
+{% endblock %}
+

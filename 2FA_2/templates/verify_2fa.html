@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Verify 2FA</h2>
+<form method="POST">
+  <label>Enter OTP:</label><br>
+  <input type="text" name="token" required><br><br>
+  <button type="submit">Verify</button>
+</form>
+{% endblock %}
+

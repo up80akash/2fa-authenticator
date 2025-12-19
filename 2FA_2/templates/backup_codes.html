@@ -1,0 +1,9 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<div class="container">
+<h2>Backup Codes</h2>
+{% for c in codes %}
+<div class="code">{{ c }}</div>
+{% endfor %}
+<a href="/login">Continue</a>
+</div>
+
