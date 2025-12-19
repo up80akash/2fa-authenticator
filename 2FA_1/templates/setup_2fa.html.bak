@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card p-4 text-center">
+            <h3>Set Up 2FA</h3>
+
+            <p>Scan this QR code using:</p>
+            <ul class="list-unstyled">
+                <li>✔ Google Authenticator</li>
+                <li>✔ Microsoft Authenticator</li>
+                <li>✔ Authy</li>
+            </ul>
+
+            <img src="/static/qrcode.png" class="img-fluid my-3">
+
+            <p><strong>Manual Key:</strong></p>
+            <code>{{ secret }}</code>
+
+            <a href="/verify-otp" class="btn btn-primary mt-4">
+                Verify OTP
+            </a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
