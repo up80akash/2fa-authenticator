@@ -1,14 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Dashboard</title>
-</head>
-<body>
-    <h2>Welcome to Secure Dashboard</h2>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
-    <p>You are logged in with 2FA protection enabled ✅</p>
+<div class="container">
+    <h2>Dashboard</h2>
+
+    <p>2FA Enabled ✔</p>
+
+    <a href="/regenerate-backup-codes">
+        <button style="margin-bottom:10px;">
+            Regenerate Backup Codes
+        </button>
+    </a>
 
     <a href="/logout">Logout</a>
-</body>
-</html>
+</div>
 

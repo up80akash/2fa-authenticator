@@ -1,6 +1,0 @@
-flask
-pyotp
-qrcode
-pillow
-werkzeug
-
